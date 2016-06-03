@@ -4,11 +4,9 @@
 
   React = require('react');
 
-  Payment = require('payment');
-
   images = require('./card-images.js');
-
-  validate = Payment.fns;
+  
+  validate = require('payment/src/payment.coffee').fns
 
   module.exports = React.createClass({
     displayName: 'Card',
